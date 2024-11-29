@@ -27,6 +27,7 @@ function hasAccount() {
     
             if (logInPassword.value === users[i].password) {
                 alert("Login Success!");
+                window.location.href = "hello.html"
                 userFound = true;
                 break;
             } 
