@@ -1,7 +1,3 @@
-let logInEmail = document.getElementById("emailLogIn")
-let logInPassword = document.getElementById("passwordLogIn")
-let logInBtn = document.getElementById("login")
-
 let signUpBtn = document.getElementById("sign-up")
 let nameSignUp = document.getElementById("nameSignUp")
 let emailSignUp = document.getElementById("emailSignUp")
