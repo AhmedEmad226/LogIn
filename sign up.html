@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mainContainer container">
+        <h1>Smart Login System</h1>
+        <div class="inputs">
+            <input type="text" name="name" id="nameSignUp" class="w-100 p-1" placeholder="Enter your Name">
+            <p id="nameAlert" class="d-none alert alert-danger">Username must be 3 to 15 characters long and can only contain lowercase letters, numbers, underscores (_), and hyphens (-).</p>
+            <input type="email" name="email" id="emailSignUp" class="w-100 p-1" placeholder="Enter your email" >
+            <p id="emailAlert" class="d-none alert alert-danger">Please enter a valid email address in the format: username@example.com.</p>
+            <input type="password" name="password" id="passwordSignUp" class="w-100 p-1" placeholder="Enter your password">
+            <p id="passwordAlert" class="d-none alert alert-danger">Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., #, ?, @, $, %, ^).</p>
+        </div>
+        <button id="sign-up" class="btn p-2 m-2">SignUp</button>
+        <p class="signUp text-align-center">Have an account? <a href="index.html">Sign In</a></p>
+    </div>
+
+
+    <script src="bootstrap.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>

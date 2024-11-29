@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(36, 54, 64);
+}
+
+
+:root {
+    --main : rgb(22, 162, 184);
+}
+
+.mainContainer {
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+    margin: 100px auto 0 auto;
+  text-align: center;
+  color: var(--main);
+  box-shadow: 0px 0px 20px 2px black;
+  width: 60%;
+}
+
+.inputs {
+    width: 90%;
+}
+
+input {
+    background-color: transparent;
+    border: 2px rgb(204, 210, 217) solid;
+    border-radius: 3px;
+    transition: all 0.7s;
+    margin: 10px;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #80bdff;
+}
+
+#login , #sign-up {
+    border: 1px solid rgb(22, 162, 184);
+    border-radius: 3px;
+    color: rgb(22, 162, 184);
+    transition: all 0.3s;
+}
+
+#login:hover , #sign-up:hover {
+    background-color: rgb(22, 162, 184);
+    color: white;
+}
+
+.signUp, .signUp a {
+    color: white;
+    text-decoration: none;
+}
+
+.signUp a:hover {
+    text-decoration: underline;
+}
