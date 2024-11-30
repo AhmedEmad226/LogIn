@@ -1,6 +1,7 @@
 let logInEmail = document.getElementById("emailLogIn")
 let logInPassword = document.getElementById("passwordLogIn")
 let logInBtn = document.getElementById("login")
+let helloMessage = document.getElementById("hello")
 
 if (localStorage.getItem("users") !== null) {
     users = JSON.parse(localStorage.getItem("users"));
@@ -29,6 +30,9 @@ function hasAccount() {
                 alert("Login Success!");
                 window.location.href = "hello.html"
                 userFound = true;
+                let message = `Hello, ${localStorage.setItem("userName", users[i].name)}`
+
+                helloMessage.innerHTML += message;
                 break;
             } 
             
@@ -44,3 +48,4 @@ function hasAccount() {
         alert("No account found with this email.");
     }
 }
+

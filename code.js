@@ -109,5 +109,6 @@ function addUser() {
 
     users.push(user)
     localStorage.setItem("users" , JSON.stringify(users))
+    localStorage.setItem("userName" , user.name)
     console.log(users)
 }
